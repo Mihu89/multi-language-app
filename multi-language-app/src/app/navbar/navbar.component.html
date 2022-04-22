@@ -2,7 +2,7 @@
     <a class="navbar-brand" href="#">MultiLanguage</a>
     <span class="spacer"></span>
     <div class="btn-group" dropdown>
-    <button id="button-animated dropdownToggle"
+    <!--<button id="button-animated dropdownToggle"
     type="button" class="btn btn-link dropdown-toggle" aria-controls="dropdown-animated">
       <i class="fa fa-globe" aria-hidden="true"></i>
       {{siteLanguage}}
@@ -16,5 +16,11 @@
                  (click)="changeSiteLanguage(language.code)">{{language.label}}</a>
             </li>
         </ng-container>
-      </ul>
+      </ul> -->
+      <select class="form-control" #selectedLanguage
+        (change)="changeSiteLanguage(selectedLanguage.value)">
+        <option *ngFor="let language of languageList" [value]="language.code"
+            [selected]="language.code === translate.currentLang">{{language.code}}</option>
+    </select>
     </div>
+</nav>

@@ -13,20 +13,24 @@ export class NavbarComponent implements OnInit {
     { code: "ru", label: 'Russian'}, 
     { code: "ro", label: 'Romanian'}, 
   ]
-  constructor(private translate: TranslateService) { }
+  constructor(public translate: TranslateService) {
+    translate.addLangs(['en', 'ro', 'ru']);
+    translate.setDefaultLang('en');
+   }
 
   ngOnInit(): void {
   }
 
-  changeSiteLanguage(localeCode : string): void{
-  const selectedLanguage = this.languageList.find(
-  (language) => language.code === localeCode)?.label.toString();
+  changeSiteLanguage(localeCode : string): void {
+    this.translate.use(localeCode);
+//   const selectedLanguage = this.languageList.find(
+//   (language) => language.code === localeCode)?.label.toString();
 
- if(selectedLanguage){
-   this.siteLanguage = selectedLanguage;
-   this.translate.use(localeCode);
- }
- const currentLanguage = this.translate.currentLang;
- console.log('Current language ', currentLanguage);
+//  if(selectedLanguage){
+//    this.siteLanguage = selectedLanguage;
+//    this.translate.use(localeCode);
+//  }
+//  const currentLanguage = this.translate.currentLang;
+//  console.log('Current language ', currentLanguage);
   }
 }
