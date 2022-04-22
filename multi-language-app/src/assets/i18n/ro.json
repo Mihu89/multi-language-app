@@ -1,6 +1,15 @@
 {
-    "home": {
-        "add-user": "Adaugare utilizator",
-        "page-name":"Home page"
-    }
+  "home": {
+    "add-user": "Adaugare utilizator",
+    "page-name": "Home page",
+    "user-name": "Nume utilizator",
+    "username-isrequired": "Nume utilizator este obligatoriu",
+    "email": "Email",
+    "mobile": "Mobil",
+    "password": "Parolă",
+    "conditions-label": "Termeni si Conditii"
+  },
+  "shared": {
+    "save": "Salvare"
+  }
 }

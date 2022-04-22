@@ -1,6 +1,15 @@
 {
-    "home": {
-        "add-user": "Add user Form",
-        "page-name":"Home page"
-    }
+  "home": {
+    "add-user": "Add user Form",
+    "page-name": "Home page",
+    "user-name": "User name",
+    "username-isrequired": "Username is required",
+    "email": "Email",
+    "mobile": "Mobile",
+    "password": "Password",
+    "conditions-label": "Terms and Conditions"
+  },
+  "shared": {
+    "save": "Save"
+  }
 }

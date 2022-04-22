@@ -1,6 +1,15 @@
 {
-    "home": {
-        "add-user": "Dobaviti Usera",
-        "page-name":"Domashneia stronita"
-    }
+  "home": {
+    "add-user": "Dobaviti Usera",
+    "page-name": "Domashneia stronita",
+    "user-name": "Imea polizivotelea",
+    "username-isrequired": "Imea obizatelinoe",
+    "email": "Elektronaia pocita",
+    "mobile": "Mobilinik",
+    "password": "Paroli",
+    "conditions-label": "Termeni i Uslovia"
+  },
+  "shared": {
+    "save": "Sohraniti"
+  }
 }

@@ -2,6 +2,30 @@
 <div class="container">
   <form action="">
     <h2>{{'home.add-user' | translate}}</h2>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="user-name">{{'home.user-name' | translate}}</label>
+        <input type="text" name="user-name" class="form-control" required>
+        <small *ngIf="true">{{'home.username-isrequired' | translate }}</small>
+      </div>
+      <div class="form-group">
+        <label for="email">{{'home.email' | translate}}</label>
+        <input type="email" name="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="mobile">{{'home.mobile' | translate}}</label>
+        <input type="tel" name="mobile" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="password">{{'home.password' | translate}}</label>
+        <input type="password" name="password" class="form-control">
+      </div>
+      <div class="form-group form-check">
+        <label for="conditions">{{'home.conditions-label' | translate}}</label>
+        <input type="checkbox" name="conditions" class="form-check-input" />
+      </div>
+      <button class="btn btn-block btn-primary" type="submit">{{'shared.save' | translate}}</button>
+    </div>
   </form>
   <router-outlet></router-outlet>
 </div>
